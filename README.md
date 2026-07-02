@@ -1,15 +1,15 @@
-# 📊 Daily Sales Data Pipeline — Airflow + Docker + Snowflake
+# Daily Sales Data Pipeline — Airflow + Docker + Snowflake
 
 A beginner-friendly data engineering project that automatically loads daily sales files,
 cleans and summarizes them, and produces report tables — all on its own.
 
-> 👋 **New to this? Start here.** This page explains, in plain English, what the tools
+>  **New to this? Start here.** This page explains, in plain English, what the tools
 > are and what this project does. For the full step-by-step build instructions (with
 > screenshots), open **`COMPLETE_GUIDE.docx`** in this repo.
 
 ---
 
-## 🤔 What is this, in plain English?
+##  What is this, in plain English?
 
 Every day a business gets new sales data as **files**. Someone has to load those files
 into a database, tidy them up, and turn them into **reports**. Doing that by hand is slow
@@ -20,7 +20,7 @@ the reports by itself. That automated "assembly line" is called a **data pipelin
 
 ---
 
-## 🧩 The three tools (and what each one does)
+##  The three tools (and what each one does)
 
 | Tool | What it is | Simple comparison |
 |------|-----------|-------------------|
@@ -33,7 +33,7 @@ the reports by itself. That automated "assembly line" is called a **data pipelin
 
 ---
 
-## ⚙️ What does the pipeline actually do?
+##  What does the pipeline actually do?
 
 It runs four steps, in order:
 
@@ -51,13 +51,13 @@ It's **incremental** — each day it only processes the *new* data, never re-cou
 it already did. That's exactly how real data pipelines work.
 
 **The reports it produces:**
-- 💰 Total sales **per region**
-- 📦 Total sales **per product**
-- 📅 Total sales **per day, per region**
+-  Total sales **per region**
+-  Total sales **per product**
+-  Total sales **per day, per region**
 
 ---
 
-## 📁 What's in this repo
+##  What's in this repo
 
 | File / folder | What it is |
 |---------------|-----------|
@@ -71,7 +71,7 @@ it already did. That's exactly how real data pipelines work.
 
 ---
 
-## 🚀 How to run it (the very short version)
+##  How to run it (the very short version)
 
 1. Install **Docker Desktop** and start it.
 2. In the project folder, run: `docker compose up -d`
@@ -79,7 +79,7 @@ it already did. That's exactly how real data pipelines work.
 4. Set up a free **Snowflake** account and connect it (see the guide).
 5. Upload a sales file and trigger the pipeline. Watch the reports appear. 🎉
 
-📖 **Full details, with every step explained, are in `COMPLETE_GUIDE.docx`.**
+ **Full details, with every step explained, are in `COMPLETE_GUIDE.docx`.**
 
 ---
 
